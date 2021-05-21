@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/*
+bredd 1170
+*/
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:#333333;
+
+    background-image: url("images/Mask Group 2.png");
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 1170px;    
+    padding: 0;    
+}
+ul{    
+    list-style: none;
+}
+
+.BlackHeader{
+    color: #333333;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.BlackSmallText{
+    color: #8A8A8A;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*Navigation bar*/
+.nav-links {     
+    display: flex;
+}
+.nav-link{   
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    font: bold 16px Poppins, sans-serif;    
+}
+.nav-button{
+    margin-top: 0.5rem;
+}
+.nav-link a:link{    
+    color: white;
+    text-decoration: none;
+}
+.nav-link a:visited{    
+    color: white;
+    text-decoration: none;
+}
+.nav-link a:hover{    
+    color: #FFBB00;    
+}
+.nav-link a:after, .nav-link .active:after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+.nav-link a:hover, .nav-link .active{
+    color: #FFBB00;
+}
+.nav-link a:hover::after, nav-link .active:after{
+    border-color: #FFBB00;
+    width: 62%;
+}
+
+/*Section 1 - Showcase*/
+.grid_s1{      
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;    
+}
+#sellsection{   
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    width: 110%;
+}
+#selltext{
+    color: white;
+    height: 50vh;     
+}
+.s1_text1{
+    font-size: 57px;
+    font-weight: bold;  
+    font-family: Poppins, sans-serif;     
+}
+.s1_text2{    
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 1rem;
+    width: 75%;
+}
+.sell-links {           
+    display: flex;
+    padding: 0;
+}
+.sell-link{   
+    margin-top: 2rem;
+    margin-right: 2rem;          
+}
+#mobimage{   
+    position: relative;
+    margin-right: 5%;
+}
+
+/*Section 2 - About*/
+.grid_s2{       
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:    "satteliteimg aboutus"
+                            "satteliteimg aboutheadline"
+                            "satteliteimg abouttext"
+                            "satteliteimg about-links";   
+margin-top: 15rem; 
+}
+#satteliteimg{
+    grid-area: satteliteimg;
+    margin-left: -22%;
+}
+#aboutus{
+    grid-area: aboutus;    
+}
+#aboutheadline{
+    grid-area: aboutheadline;   
+}
+#abouttext{
+    grid-area: abouttext;    
+}
+#about-links {   
+    display: flex;  
+    justify-items: start;  
+    padding: 0;
+}
+.about-link{
+    grid-area:about-links;
+    margin-right: 2rem;          
+}
+
+/*Section 3 - Features*/
+.grid_s3{    
+    background-color: #F5F5F5; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-areas:    "dots feature . bigimg"
+                            "dots header header bigimg"
+                            "dots text text bigimg"
+                            "dots search manage bigimg"
+                            "dots ease support bigimg";
+    margin-top: 15rem;
+    padding: 5% 0px;
+}
+#dots_img{   
+    grid-area: dots; 
+    align-self: center; 
+    
+}
+#feature_img{
+    
+    grid-area: feature;    
+}
+#feature_bigimg{
+    grid-area: bigimg;    
+}
+#feature_head{
+    grid-area: header;
+    padding-right: 15rem;
+}
+#feature_text{
+    grid-area: text;
+    padding-right: 15rem;
+}
+#feature_search{
+    grid-area: search;
+    display: flex;
+}
+#feature_manage{
+    grid-area: manage;
+}
+#feature_ease{
+    grid-area: ease;
+}
+#feature_support{
+    grid-area: support;
+}
+.subsection{
+display: flex;
+margin-right: 4rem;
+}
+.subimage{    
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+.subtexts{
+flex: 1;
+}
+.subheader{
+    font-family: Roboto, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+.subtext{
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/*Section 4 - Screens*/
+.grid_s4{ 
+    background-color: #FFFFFF; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "header"
+                            "text"
+                            "bigimg";
+    justify-items: center;
+    margin-top: 5rem;
+}
+#screen_head{
+    grid-area: header;
+    text-align: center;
+}
+#screen_text{
+    grid-area: text; 
+    text-align: center;
+    margin-top: 1rem;
+    width: 30%;
+}
+#screen_image{
+    margin-top: 4rem;
+}
+
+/*Section 5 - Statistics*/
+.grid_s5{    
+    background-color: #FFFFFF; 
+    background-image: url("images/s5 world.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "header header header header"
+                            "text text text text"
+                            "clients beneficiaries reviews downloads";
+    justify-items: center;
+    margin-top: 10rem;
+    height: 50%;
+}
+#statistic_head{
+    grid-area: header;    
+    text-align: center;
+}
+#statistic_text{
+    grid-area: text;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#clients{
+    grid-area: clients;
+}
+#beneficiaries{
+    grid-area: beneficiaries;
+}
+#reviews{
+    grid-area: reviews;
+}
+#downloads{
+    grid-area: downloads;
+}
+.numbertext{
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;    
+}
+.stats{
+    display: flex;
+    justify-items: center;
+}
+.numbers{
+    color: #1487FD;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;  
+}
+
+/*Section 6 - Download*/
+.grid_s6{ 
+    background-color: #1487FD;
+    background-image: url("images/s6 background pattern.png");
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:    ". header bigimg"
+                            ". text bigimg"
+                            ". buttons bigimg";
+    justify-items: start;
+    align-items: center; 
+    margin-top: 7rem;   
+}
+#DL-header{   
+    grid-area: header;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    width: 95%;    
+}
+#DL-text{   
+    grid-area: text;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    width: 80%;   
+}
+.DL-links {    
+    grid-area: buttons;         
+    display: flex;   
+    padding: 0;
+}
+.DL-link{    
+    margin-right: 2rem;          
+}
+#mobgroup{  
+    grid-area: bigimg;
+    align-self: flex-end;
+}
+.tempform{
+    height: 10rem;
+}
+/*Section 7 - Contact*/
+.grid_s7{   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "header"
+                            "text"
+                            "form"
+                            "button";
+    justify-items: center;
+    margin-top: 7rem;   
+}
+#contact_header{
+    grid-area: header;
+}
+#contact_text{
+    grid-area: text;
+    text-align: center;
+    width: 50%;
+}
+#contact_form{   
+    grid-area: form;
+    margin-top: 3rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "name email"
+                            "message message";    
+}
+#contact_form input, #contact_form textarea{
+    padding: 1rem;
+    background: #FBFBFB;
+    
+}
+#name{
+    grid-area: name;
+    height: 4rem;
+    width: 35rem;
+    margin-right: 3rem;
+}
+#email{
+    grid-area: email;
+    height: 4rem;
+    width: 35rem;
+}
+#message{
+    grid-area: message;    
+    height: 20rem;
+}
+#contact_button{
+    grid-area: button;
+}
+
+
+/*Footer*/
+.grid_footer{   
+    background-image: url("images/s7 footer.png");  
+    display: grid;
+    justify-items: center; 
+    padding-top: 3rem;     
+    padding-bottom: 2rem; 
+    margin-top: 5rem;
+}
+#footer-links{
+    display: flex;
+    margin-top: 1rem;
+}
+#footer-socials{
+    display: flex;
+    margin-top: -1rem;
+}
+.footer-link a:link{
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 18;
+    font-weight: normal;
+    text-decoration: none; 
+    margin-right: 3rem;   
+}
+.footer-link a:visited{
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 18;
+    font-weight: normal;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+.footer-link a:hover{    
+    color: #FFBB00;    
+}
+.footer-link a:after, .footer-link .active:after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+.footer-link a:hover, .footer-link .active{
+    color: #FFBB00;
+}
+.footer-link a:hover::after, footer-link .active:after{
+    border-color: #FFBB00;
+    width: 30%;
+}
+.social-link{
+    margin-right: 1rem;
+}
