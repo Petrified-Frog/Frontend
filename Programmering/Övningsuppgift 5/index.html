@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <!-- <div class="container" id="formContainer">
+        
+        <form id="contact_form" onsubmit="submitRegistration(event)">
+            <h1>Register Today!</h1>
+            <div class="details">
+                <div id="fname" class="std_inputsection">
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fname" placeholder="Enter your first name" onkeyup="validateName(event)">
+                    <p id="nameInputError" class="errortext"></p>
+                </div>            
+                <div id="email" class="std_inputsection">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Enter your email" onkeyup="validateEmail(event)">
+                    <p id="emailInputError" class="errortext"></p>
+                </div>
+                <div id="address" class="std_inputsection">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" placeholder="Enter your address" onkeyup="validateAddress(event)">
+                    <p id="addressInputError" class="errortext"></p>
+                </div>
+                <div id="zipcity" class="double_section">
+                    <div id="zipcode" class="std_inputsection">
+                        <label for="zipcode">Zipcode:</label>
+                        <input type="text" name="zipcode" placeholder="Enter your zipcode" onkeyup="validateZip(event)">
+                        <p id="zipInputError" class="errortext"></p>
+                    </div>
+                    <div id="city" class="std_inputsection">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" placeholder="Enter your city" onkeyup="validateCity(event)">
+                        <p id="cityInputError" class="errortext"></p>
+                    </div>
+                </div>
+                <div id="uname" class="std_inputsection">
+                    <label for="lname">User name:</label>
+                    <input type="text" name="uname" placeholder="Enter your user name" onkeyup="validateUserName(event)">
+                    <p id="usernameInputError" class="errortext"></p>
+                </div>
+                <div id="password" class="std_inputsection">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" placeholder="Enter your password" onkeyup="validatePassword(event)">
+                    <p id="passwordInputError" class="errortext"></p>
+                </div>
+                <div id="passwordconfirm" class="std_inputsection">
+                    <label for="passwordconfirm">Confirm Password:</label>
+                    <input type="password" name="passwordconfirm" placeholder="Confirm your password" onkeyup="confirmPassword()">
+                    <p id="confirmInputError" class="errortext"></p>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <button id="contact_button" type="submit">Send</button> 
+            </div>            
+        </form>
+    </div> -->
+
+    <div id="formContainer">
+        <form id="registerForm" onsubmit="submitRegistration(event)">
+            <h1 class="boxHeader">Register Today!</h1>
+
+            <label class="inputLabel" for="fname">Name:</label>
+            <input class="inputField" type="text" name="fname" placeholder="Enter your name" onkeyup="validateName(event)">
+            <p id="nameInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="email">Email:</label>
+            <input class="inputField" type="text" name="email" placeholder="Enter your email" onkeyup="validateEmail(event)">
+            <p id="emailInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="address">Address:</label>
+            <input class="inputField" type="text" name="address" placeholder="Enter your address" onkeyup="validateAddress(event)">
+            <p id="addressInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="zipcode">Zipcode:</label>
+            <input class="inputField" type="text" name="zipcode" placeholder="Enter your zipcode" onkeyup="validateZip(event)">
+            <p id="zipInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="city">City:</label>
+            <input class="inputField" type="text" name="city" placeholder="Enter your city" onkeyup="validateCity(event)">
+            <p id="cityInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="lname">User name:</label>
+            <input class="inputField" type="text" name="uname" placeholder="Enter your user name" onkeyup="validateUserName(event)">
+            <p id="usernameInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="password">Password:</label>
+            <input id="registerPasswordInput" class="inputField" type="password" name="password" placeholder="Enter your password" onkeyup="validatePassword(event)">
+            <p id="passwordInputError" class="inputError"></p>
+
+            <label class="inputLabel" for="passwordconfirm">Confirm Password:</label>
+            <input id="registerPasswordConfirm" class="inputField" type="password" name="passwordconfirm" placeholder="Confirm your password" onkeyup="confirmPassword()">
+            <p id="confirmInputError" class="inputError"></p>
+
+            <button id="registerButton" class="buttonStyle" type="submit">Send</button> 
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

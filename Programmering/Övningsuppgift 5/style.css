@@ -1,0 +1,202 @@
+/* #contact_form{
+    height: 100vh;
+    display: grid;
+    align-content: center;   
+} */
+
+/*Register page*/
+#formContainer{
+    background-color: rgb(168, 200, 236);    
+    display: grid;
+    justify-content: center;
+    align-content: center;    
+}
+#registerForm{
+    background-color: #1487FD;
+    border:black 3px solid; 
+    padding: 2rem;
+    display: grid; 
+    
+}
+#registerFor #registerButton{
+    justify-items: center;
+}
+.inputLabel{
+    color: white;    
+}
+.inputField{    
+    background: #FBFBFB;
+    margin-bottom: 1rem;
+}
+.inputError{
+    color: crimson;
+    font-size: 0.8rem; 
+    margin-top: -1rem;
+    margin-bottom: -0.8rem;
+}
+.buttonStyle{
+    width: 15rem;
+    height: 3rem;    
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/* 
+#contact_form input, #contact_form textarea{    
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #FBFBFB;    
+} 
+.details{ 
+       
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "fname "                             
+                            "email "
+                            "adress "
+                            "zipcity "  
+                            "uname "                          
+                            "password "
+                            "passwordconfirm "
+                            "message ";
+}
+ .buttonContainer{
+    display: grid;
+    justify-items: center;
+}
+.std_inputsection{
+    display: grid;
+    width: 50%;
+}
+.double_section{    
+    display: flex;
+    width: 50%;
+} 
+#fname{   
+   grid-area: fname;
+}
+#email{    
+    grid-area: email;
+}
+#adress{
+    grid-area: adress;
+}
+#zipcity{
+    grid-area: zipcity;    
+}
+#zipcode{    
+     margin-right: 3rem;  
+}
+#uname{
+    grid-area: uname;
+}
+#password{
+   grid-area: password;
+}
+#passwordconfirm{
+    grid-area: passwordconfirm;
+}
+#contact_button{   
+    width: 10rem;
+    height: 3rem;    
+    font-size: 1rem;
+    font-weight: bold;     
+} 
+
+.errortext{
+    color: crimson;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+} 
+*/
+
+
+/* login page */
+li{
+    list-style: none;
+}
+
+#loginContainer{
+    background-color: rgb(168, 200, 236);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#loginBox{
+    background-color: #1487FD;
+    border:black 3px solid; 
+    padding: 2rem;
+    display: grid;
+}
+#loginUserInput{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#loginButton{
+    width: 25%;
+    height: 2rem;
+    justify-self: center;
+    text-align: center;
+}
+#socialButtons{
+    display: flex;
+    justify-content: center;
+}
+.boxHeader{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.boxText{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#socialButtons{
+    margin-top: 1rem;
+}
+.socialListItem{
+    margin-right: 1rem;
+}
+
+.welcomeMessage{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    #formContainer{
+        background-color: rgb(168, 200, 236);    
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    #registerForm{
+        background-color: #1487FD;
+        
+        padding: 2rem;
+        display: grid; 
+        
+    }
+    .buttonStyle{
+        width: 15rem;
+        height: 3rem;    
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+}
