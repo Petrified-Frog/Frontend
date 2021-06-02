@@ -1,0 +1,40 @@
+.navbar{
+
+    .nav-links {     
+        display: flex;
+
+        .nav-link{   
+            margin-top: 1rem;
+            margin-right: 1.5rem;
+            font: bold 16px Poppins, sans-serif;    
+        }
+        .nav-button{
+            margin-top: 0.5rem;
+        }
+
+        .nav-link a:link{    
+            color: $white;
+            text-decoration: none;
+        }
+        .nav-link a:visited{    
+            color: $white;
+            text-decoration: none;
+        }
+        .nav-link a:hover{    
+            color: $secondary-yellow;  
+        }
+        .nav-link a:after, .nav-link .active:after{
+            content: "";
+            display: block;
+            border-bottom: 3px solid transparent;
+        }
+        .nav-link a:hover, .nav-link .active{
+            color: $secondary-yellow;
+        }
+        .nav-link a:hover::after, nav-link .active:after{
+            border-color: $secondary-yellow;
+            width: 62%;
+        }
+    }
+
+}

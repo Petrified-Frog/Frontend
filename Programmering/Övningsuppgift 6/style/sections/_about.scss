@@ -1,0 +1,35 @@
+.grid_s2{       
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:    "satteliteimg aboutus"
+                            "satteliteimg aboutheadline"
+                            "satteliteimg abouttext"
+                            "satteliteimg about-links";   
+    margin-top: 15rem; 
+
+    #satteliteimg{
+        grid-area: satteliteimg;
+        margin-left: -22%;
+    }
+    #about{
+        #aboutus{
+            grid-area: aboutus;    
+        }
+        #aboutheadline{
+            grid-area: aboutheadline;   
+        }
+        #abouttext{
+            grid-area: abouttext;    
+        }
+        #about-links {   
+            display: flex;  
+            justify-items: start;  
+            padding: 0;
+
+            .about-link{
+                grid-area:about-links;
+                margin-right: 2rem;          
+            }
+        }
+    }
+}

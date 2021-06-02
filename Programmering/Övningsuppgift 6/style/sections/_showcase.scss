@@ -1,0 +1,25 @@
+#sellsection{   
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    width: 110%;
+
+    #selltext{
+        color: $white;
+        height: 50vh;  
+        
+        .sell-links {           
+            display: flex;
+            padding: 0;
+
+            .sell-link{   
+                margin-top: 2rem;
+                margin-right: 2rem;          
+            }
+        }
+    }
+    #mobimage{   
+        position: relative;
+        margin-right: 5%;
+    }
+}

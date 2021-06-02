@@ -1,0 +1,37 @@
+.grid_s5{    
+    background-color: $white; 
+    background-image: url("images/s5 world.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "header header header header"
+                            "text text text text"
+                            "clients beneficiaries reviews downloads";
+    justify-items: center;
+    margin-top: 10rem;
+    height: 50%;
+
+    #statistic_head{
+        grid-area: header;    
+        text-align: center;
+    }
+    #statistic_text{
+        grid-area: text;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    #clients{
+        grid-area: clients;
+    }
+    #beneficiaries{
+        grid-area: beneficiaries;
+    }
+    #reviews{
+        grid-area: reviews;
+    }
+    #downloads{
+        grid-area: downloads;
+    }
+}

@@ -1,0 +1,111 @@
+body{
+    font-family: $poppins;
+    font-weight: 400;
+    color: $dark;
+
+    background-image: url("../images/Mask Group 2.png");
+    background-repeat: no-repeat;
+}
+ul{    
+    list-style: none;
+}
+.container{
+    max-width: 1170px;    
+    padding: 0;    
+}
+
+.subsection{
+    display: flex;
+    margin-right: 4rem;
+    }
+.subimage{    
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+.subtexts{
+    flex: 1;
+}
+
+//text standard formats
+.BlackHeader{
+    color: $dark;
+    font-family: $roboto;
+    font-size: $fontsize-smallHeader;
+    font-weight: 700;
+}
+.BlackSmallText{
+    color: $light;
+    font-family: $roboto;
+    font-size: $fontsize-normal;
+    font-weight: normal;
+}
+
+.subheader{
+    font-family: $roboto;
+    font-size: $fontsize-subHeader;
+    font-weight: 800;
+}
+.subtext{
+    font-family: $roboto;
+    font-size: $fontsize-small;
+    font-weight: normal;
+}
+
+.numbers{
+    color: $primary-blue;
+    font-family: $roboto;
+    font-size: $fontsize-smallHeader;
+    font-weight: bold;
+    text-align: center;  
+}
+.numbertext{
+    font-family: $roboto;
+    font-size: $fontsize-numberText;
+    font-weight: 500;
+    text-align: center;        
+}
+
+.s1_text1{
+    font-size: $fontsize-bigHeader;
+    font-family: $poppins;
+    font-weight: bold;  
+
+}
+.s1_text2{    
+    font-size: $fontsize-normal;
+    font-weight: normal;
+    margin-top: 1rem;
+    width: 75%;    
+}
+
+.contact_form{   
+    grid-area: form;
+    margin-top: 3rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "name email"
+                            "message message";  
+
+    input, textarea{
+        height: 4rem;
+        padding: 1rem;
+        background: $formfield-background;        
+    }
+}
+
+#DL-header{   
+    grid-area: header;
+    color: $white;
+    font-family: $roboto;
+    font-size: $fontsize-normalHeader;
+    font-weight: bold;
+    width: 95%;    
+}
+#DL-text{   
+    grid-area: text;
+    color: $white;
+    font-family: $roboto;
+    font-size: $fontsize-normal;
+    width: 80%;   
+}

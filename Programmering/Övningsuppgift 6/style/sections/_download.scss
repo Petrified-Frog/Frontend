@@ -1,0 +1,27 @@
+.grid_s6{ 
+    background-color: #1487FD;
+    background-image: url("images/s6 background pattern.png");
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:    ". header bigimg"
+                            ". text bigimg"
+                            ". buttons bigimg";
+    justify-items: start;
+    align-items: center; 
+    margin-top: 7rem; 
+    
+    .DL-links {    
+        grid-area: buttons;         
+        display: flex;   
+        padding: 0;
+
+        .DL-link{    
+            margin-right: 2rem;          
+        }
+    }
+    #mobgroup{  
+        grid-area: bigimg;
+        align-self: flex-end;
+    }
+}

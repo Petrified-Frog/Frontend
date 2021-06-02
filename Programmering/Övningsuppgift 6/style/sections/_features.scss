@@ -1,0 +1,44 @@
+.grid_s3{    
+    background-color: $background-break; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-areas:    "dots feature . bigimg"
+                            "dots header header bigimg"
+                            "dots text text bigimg"
+                            "dots search manage bigimg"
+                            "dots ease support bigimg";
+    margin-top: 15rem;
+    padding: 5% 0px;
+
+    #dots_img{   
+        grid-area: dots; 
+        align-self: center;         
+    }
+    #feature_img{    
+        grid-area: feature;    
+    }
+    #feature_bigimg{
+        grid-area: bigimg;    
+    }
+    #feature_head{
+        grid-area: header;
+        padding-right: 15rem;
+    }
+    #feature_text{
+        grid-area: text;
+        padding-right: 15rem;
+    }
+    #feature_search{
+        grid-area: search;
+        display: flex;
+    }
+    #feature_manage{
+        grid-area: manage;
+    }
+    #feature_ease{
+        grid-area: ease;
+    }
+    #feature_support{
+        grid-area: support;
+    }
+}

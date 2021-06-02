@@ -1,0 +1,53 @@
+.grid_footer{   
+    background-image: url("../images/s7 footer.png");  
+    display: grid;
+    justify-items: center; 
+    padding-top: 3rem;     
+    padding-bottom: 2rem; 
+    margin-top: 5rem;
+
+    #footer-links{
+        display: flex;
+        margin-top: 1rem;
+
+        .footer-link a:link{
+            color: $white;
+            font-family: $roboto;
+            font-size: $fontsize-big;
+            font-weight: normal;
+            text-decoration: none; 
+            margin-right: 3rem;   
+        }
+        .footer-link a:visited{
+            color: $white;
+            font-family: $roboto;
+            font-size: $fontsize-big;
+            font-weight: normal;
+            text-decoration: none;
+            margin-right: 3rem;
+        }
+        .footer-link a:hover{    
+            color: $secondary-yellow;
+        }
+        .footer-link a:after, .footer-link .active:after{
+            content: "";
+            display: block;
+            border-bottom: 3px solid transparent;
+        }
+        .footer-link a:hover, .footer-link .active{
+            color: $secondary-yellow;
+        }
+        .footer-link a:hover::after, footer-link .active:after{
+            border-color: $secondary-yellow;
+            width: 30%;
+        }
+    }
+    #footer-socials{
+        display: flex;
+        margin-top: -1rem;
+
+        .social-link{
+            margin-right: 1rem;
+        }
+    }
+}

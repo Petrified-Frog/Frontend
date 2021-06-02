@@ -1,0 +1,46 @@
+.grid_s7{   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "header"
+                            "text"
+                            "form"
+                            "button";
+    justify-items: center;
+    margin-top: 7rem;   
+
+    #contact_header{
+        grid-area: header;
+    }
+    #contact_text{
+        grid-area: text;
+        text-align: center;
+        width: 50%;
+    }
+    #contact_form{   
+        grid-area: form;
+        margin-top: 3rem;
+        height: 30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "name email"
+                                "message message";
+    }
+
+    #name{
+        grid-area: name;       
+        width: 35rem;
+        margin-right: 3rem;
+    }
+    #email{
+        grid-area: email;       
+        width: 35rem;
+    }
+    #message{
+        grid-area: message;    
+        height: 20rem;
+    }
+    #contact_button{
+        grid-area: button;
+        justify-self: end;
+    }
+}
