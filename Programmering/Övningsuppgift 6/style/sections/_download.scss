@@ -10,15 +10,9 @@
     justify-items: start;
     align-items: center; 
     margin-top: 7rem; 
-    
-    .DL-links {    
-        grid-area: buttons;         
-        display: flex;   
-        padding: 0;
 
-        .DL-link{    
-            margin-right: 2rem;          
-        }
+    .DL-buttons {    
+        grid-area: buttons;   
     }
     #mobgroup{  
         grid-area: bigimg;

@@ -85,13 +85,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:    "name email"
-                            "message message";  
-
-    input, textarea{
-        height: 4rem;
-        padding: 1rem;
-        background: $formfield-background;        
-    }
+                            "message message";    
 }
 
 #DL-header{   

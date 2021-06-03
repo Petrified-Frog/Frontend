@@ -6,7 +6,7 @@
                             "form"
                             "button";
     justify-items: center;
-    margin-top: 7rem;   
+    margin-top: 7rem;
 
     #contact_header{
         grid-area: header;
@@ -41,6 +41,6 @@
     }
     #contact_button{
         grid-area: button;
-        justify-self: end;
+        justify-self: center;
     }
 }

@@ -20,16 +20,11 @@
         }
         #abouttext{
             grid-area: abouttext;    
+            margin-bottom: 2rem;
         }
-        #about-links {   
-            display: flex;  
-            justify-items: start;  
-            padding: 0;
-
-            .about-link{
-                grid-area:about-links;
-                margin-right: 2rem;          
-            }
+        
+        .DL-button{
+            grid-area:about-links;
         }
     }
 }
