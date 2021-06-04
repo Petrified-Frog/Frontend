@@ -44,8 +44,8 @@ ul {
 .BlackSmallText {
   color: #8a8a8a;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: normal;
+  font-size: 16px;
 }
 
 .subheader {
@@ -56,15 +56,15 @@ ul {
 
 .subtext {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
   font-weight: normal;
+  font-size: 14px;
 }
 
 .numbers {
   color: #1487FD;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
   font-weight: bold;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -106,8 +106,8 @@ ul {
   grid-area: header;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
   font-weight: bold;
+  font-size: 50px;
   width: 95%;
 }
 

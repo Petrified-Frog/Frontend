@@ -2,7 +2,6 @@ body{
     font-family: $poppins;
     font-weight: 400;
     color: $dark;
-
     background-image: url("../images/Mask Group 2.png");
     background-repeat: no-repeat;
 }
@@ -35,9 +34,9 @@ ul{
 }
 .BlackSmallText{
     color: $light;
-    font-family: $roboto;
+    @include standardRoboto();
     font-size: $fontsize-normal;
-    font-weight: normal;
+    
 }
 
 .subheader{
@@ -46,16 +45,14 @@ ul{
     font-weight: 800;
 }
 .subtext{
-    font-family: $roboto;
-    font-size: $fontsize-small;
-    font-weight: normal;
+    @include standardRoboto();    
+    font-size: $fontsize-small;    
 }
 
 .numbers{
     color: $primary-blue;
-    font-family: $roboto;
-    font-size: $fontsize-smallHeader;
-    font-weight: bold;
+    @include boldRoboto();    
+    font-size: $fontsize-smallHeader;    
     text-align: center;  
 }
 .numbertext{
@@ -91,9 +88,8 @@ ul{
 #DL-header{   
     grid-area: header;
     color: $white;
-    font-family: $roboto;
-    font-size: $fontsize-normalHeader;
-    font-weight: bold;
+    @include boldRoboto();    
+    font-size: $fontsize-normalHeader;    
     width: 95%;    
 }
 #DL-text{   

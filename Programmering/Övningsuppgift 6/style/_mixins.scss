@@ -1,0 +1,9 @@
+@mixin standardRoboto(){
+    font-family: $roboto;
+    font-weight: normal;
+}
+
+@mixin boldRoboto(){
+    font-family: $roboto;
+    font-weight: bold;
+}
